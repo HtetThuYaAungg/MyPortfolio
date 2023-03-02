@@ -9,7 +9,7 @@ const Nav = () => {
     btn.addEventListener("click", () => {
       menu.classList.toggle("hidden");
     });
-  });
+  },[]);
 
   return (
     <>
