@@ -20,7 +20,7 @@ const Nav = () => {
               <div>
                 <Link href="#" className="flex items-center py-4 px-2">
                   <img
-                    src="src/images/pp1.jpg"
+                    src="/pp1.jpg"
                     alt="Logo"
                     className="h-8 w-8 mr-2 rounded-full"
                   />
