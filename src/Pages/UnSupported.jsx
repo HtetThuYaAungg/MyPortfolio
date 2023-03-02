@@ -18,7 +18,7 @@ const UnSupported = () => {
       <p className="text-gray-700 text-base">Sorry! This Device Is Not Supported By Developer.</p>
     </div>
     <div className="flex items-center">
-      <img className="w-10 h-10 rounded-full mr-4"   src="./src/assets/images/pp1.jpg" alt="Avatar of Jonathan Reinink" />
+      <img className="w-10 h-10 rounded-full mr-4"   src="src/images/pp1.jpg" alt="Avatar of Jonathan Reinink" />
       <div className="text-sm">
         <p className="text-gray-900 leading-none">Htet Thu Ya Aung</p>
         <p className="text-gray-600">Developer</p>
