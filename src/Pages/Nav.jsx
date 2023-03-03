@@ -34,7 +34,7 @@ const Nav = () => {
           <div className="flex justify-between">
             <div className="flex space-x-7">
               <div>
-                <Link href="#" className="flex items-center py-4 px-2">
+                <Link to='/login' className="flex items-center py-4 px-2">
                   <img
                     src="/pp1.jpg"
                     alt="Logo"
