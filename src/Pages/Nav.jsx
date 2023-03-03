@@ -10,8 +10,23 @@ const Nav = () => {
       menu.classList.toggle("hidden");
     });
     // console.log("hi")
-  },[]);
-
+  }, []);
+  
+    // Function will execute on click of button
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('sample.pdf').then(response => {
+      response.blob().then(blob => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement('a');
+        alink.href = fileURL;
+        alink.download = 'sample.pdf';
+        alink.click();
+      })
+    })
+  }
   return (
     <>
       <nav className="bg-white shadow-lg Nav">
@@ -36,7 +51,7 @@ const Nav = () => {
                   <li>
                     <Link
                       to="/"
-                      className="py-4 px-2 text-green-500 border-b-2 border-green-500 font-semibold "
+                      className="py-4 px-2 text-green-900 border-b-2 border-green-900 font-semibold "
                     >
                       Home
                     </Link>
@@ -44,7 +59,7 @@ const Nav = () => {
                   <li>
                     <Link
                       to="/service"
-                      className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                      className="py-4 px-2 text-gray-500 font-semibold  transition duration-300"
                     >
                       Services
                     </Link>
@@ -52,7 +67,7 @@ const Nav = () => {
                   <li>
                     <Link
                       to="/project"
-                      className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                      className="py-4 px-2 text-gray-500 font-semibold transition duration-300"
                     >
                       Projects
                     </Link>
@@ -60,7 +75,7 @@ const Nav = () => {
                   <li>
                     <Link
                       to="/contact"
-                      className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
+                      className="py-4 px-2 text-gray-500 font-semibold  transition duration-300"
                     >
                       Contact
                     </Link>
@@ -71,8 +86,9 @@ const Nav = () => {
             {/* <!-- Secondary Navbar items --> */}
             <div className="hidden md:flex items-center space-x-3 ml-2 ">
               <Link
-                to=""
-                className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"
+                to="/"
+                onClick={onButtonClick}
+                className="py-2 px-2 font-medium text-white bg-green-900 rounded hover:bg-green-800 transition duration-300"
               >
                 Download CV
               </Link>
