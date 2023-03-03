@@ -21,7 +21,7 @@ const Home = () => {
         <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
             <img
-              src="./src/images/github-ico.png"
+              src="/github-ico.png"
               alt="icon"
               class="home-hero__social-icon"
             />
@@ -30,7 +30,7 @@ const Home = () => {
         <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
             <img
-              src="./src/images/linkedin-ico.png"
+              src="/linkedin-ico.png"
               alt="icon"
               class="home-hero__social-icon"
             />
@@ -39,7 +39,7 @@ const Home = () => {
         <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
             <img
-              src="./src/images/twitter-ico.png"
+              src="/twitter-ico.png"
               alt="icon"
               class="home-hero__social-icon"
             />
@@ -48,7 +48,7 @@ const Home = () => {
         <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
             <img
-              src="./src/images/yt-ico.png"
+              src="/yt-ico.png"
               alt="icon"
               class="home-hero__social-icon"
             />
@@ -60,7 +60,7 @@ const Home = () => {
             class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
           >
             <img
-              src="./src/images/insta-ico.png"
+              src="/insta-ico.png"
               alt="icon"
               class="home-hero__social-icon"
             />
