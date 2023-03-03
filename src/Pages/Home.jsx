@@ -21,7 +21,7 @@ const Home = () => {
         <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
             <img
-              src="github-ico.png"
+              src="pp1.jpg"
               alt="icon"
               class="home-hero__social-icon"
             />
