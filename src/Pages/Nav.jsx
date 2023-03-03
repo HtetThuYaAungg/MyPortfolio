@@ -9,6 +9,7 @@ const Nav = () => {
     btn.addEventListener("click", () => {
       menu.classList.toggle("hidden");
     });
+    // console.log("hi")
   },[]);
 
   return (
@@ -61,7 +62,7 @@ const Nav = () => {
                       to="/contact"
                       className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300"
                     >
-                      Contact Us
+                      Contact
                     </Link>
                   </li>
                 </ul>
@@ -122,7 +123,7 @@ const Nav = () => {
             to="/contact"
             className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
           >
-            Contact Me
+            Contact
           </Link>
           <Link
             to=""
