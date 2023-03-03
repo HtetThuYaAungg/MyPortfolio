@@ -116,34 +116,35 @@ const Nav = () => {
         <div className="md:hidden flex justify-between mobile-menu items-center">
           <Link
             to="/"
-            className="py-4 px-2 text-green-500  border-green-500 font-semibold "
+            className="py-4 px-2 text-green-900  border-green-800 font-semibold "
           >
             Home
           </Link>
 
           <Link
             to="/service"
-            className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+            className="block text-sm px-2 py-4 hover:bg-green-800 transition duration-300"
           >
             Services
           </Link>
 
           <Link
             to="/project"
-            className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+            className="block text-sm px-2 py-4 hover:bg-green-800 transition duration-300"
           >
             About
           </Link>
 
           <Link
             to="/contact"
-            className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
+            className="block text-sm px-2 py-4 hover:bg-green-800 transition duration-300"
           >
             Contact
           </Link>
           <Link
-            to=""
-            className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300"
+            to="/"
+            onClick={onButtonClick}
+            className="py-2 px-2 font-medium text-white bg-green-900 rounded hover:bg-green-800 transition duration-300"
           >
             Download CV
           </Link>
