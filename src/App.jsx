@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div className='App'>
       
-      {width < 390 ? <UnSupported/> :
+      {width < 412 ? <UnSupported/> :
          <Start /> 
       }
      

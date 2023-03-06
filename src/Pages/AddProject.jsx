@@ -13,9 +13,10 @@ const AddProject = () => {
     try {
       // Calling the logOutUser function from the user context.
       const loggedOut = await logOutUser();
+      localStorage.clear();
       // Now we will refresh the page, and the user will be logged out and
       // redirected to the login page because of the <PrivateRoute /> component.
-     
+
     } catch (error) {
       alert(error)
     }
@@ -26,12 +27,12 @@ const AddProject = () => {
     <div className='ADDPROJECT'>
       AddProject
       <button variant="contained" className="btn btn-primary mr-2" onClick={logOut}>
-                Logout
+        Logout
       </button>
       <Link to="/signup">
-      <button variant="contained" className="btn btn-primary mr-2" >Admin Registration</button>
+        <button variant="contained" className="btn btn-primary mr-2" >Admin Registration</button>
       </Link>
-      
+
     </div>
   )
 }
