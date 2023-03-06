@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Nav = () => {
+
+  const navigate = useNavigate();
+
   useEffect(() => {
     const btn = document.querySelector("button.mobile-menu-button");
     const menu = document.querySelector(".mobile-menu");
@@ -11,6 +14,14 @@ const Nav = () => {
     });
     // console.log("hi")
   }, []);
+
+  const clickHandler = (event) => {
+		if(event.detail == 5){
+      navigate('/login');
+    }
+	}
+
+  
   
     // Function will execute on click of button
   const onButtonClick = () => {
@@ -34,8 +45,9 @@ const Nav = () => {
           <div className="flex justify-between">
             <div className="flex space-x-7">
               <div>
-                <Link to='/login' className="flex items-center py-4 px-2">
+                <div  onClick={clickHandler} className="flex items-center py-4 px-2">
                   <img
+                   id="tripple"
                     src="/pp1.jpg"
                     alt="Logo"
                     className="h-8 w-8 mr-2 rounded-full"
@@ -43,7 +55,7 @@ const Nav = () => {
                   <span className="font-semibold text-gray-500 text-lg">
                     Htet Thu Ya Aung
                   </span>
-                </Link>
+                </div>
               </div>
               {/* <!-- Primary Navbar items --> */}
               <div className="hidden md:flex items-center space-x-1 ml-2 ">

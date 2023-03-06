@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.11",
     "axios": "^1.3.4",
     "daisyui": "^2.51.3",
     "flowbite": "^1.6.3",
@@ -16,7 +19,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
-    "react-router-dom": "^6.8.2"
+    "react-router-dom": "^6.8.2",
+    "realm-web": "^1.7.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
