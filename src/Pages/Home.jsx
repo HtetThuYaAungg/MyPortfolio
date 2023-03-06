@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <div class="home-hero__socials">
         <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
+          <a href="https://github.com/HtetThuYaAungg" class="home-hero__social-icon-link">
             <img
               src="/github-ico.png"
               alt="icon"
@@ -28,7 +28,7 @@ const Home = () => {
           </a>
         </div>
         <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
+          <a href="https://www.linkedin.com/in/htet-thu-ya-a411471b5" class="home-hero__social-icon-link">
             <img
               src="/linkedin-ico.png"
               alt="icon"
@@ -46,7 +46,7 @@ const Home = () => {
           </a>
         </div>
         <div class="home-hero__social">
-          <a href="#" class="home-hero__social-icon-link">
+          <a href="https://www.youtube.com/@mghtetthuya1200" class="home-hero__social-icon-link">
             <img
               src="/yt-ico.png"
               alt="icon"
@@ -56,7 +56,7 @@ const Home = () => {
         </div>
         <div class="home-hero__social">
           <a
-            href="#"
+            href="https://instagram.com/htet_thu_ya?igshid=NTE5MzUyOTU="
             class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
           >
             <img
