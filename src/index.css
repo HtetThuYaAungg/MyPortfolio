@@ -277,7 +277,7 @@ body {
 .home-hero {
   color: #fff;
  
-  height: 76.3vh;
+  height: 83vh;
   width: 100%;
   position: relative;
   background: linear-gradient(
@@ -465,13 +465,7 @@ left: 5.8rem;
 }
 @media only screen and (width:851px), screen and (height:393px){
   .home-hero__socials{
-   top : 52%;
-  }
-}
-@media only screen and (width:1114px), screen and (height:720px){
-  .home-hero__socials{
-   top : 600%;
-   left: 0rem;
+   top : 55%;
   }
 }
 @media only screen and (width:540px), screen and (height:720px){
