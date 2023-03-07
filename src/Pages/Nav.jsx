@@ -135,7 +135,7 @@ const Nav = () => {
 
           <Link
             to="/service"
-            className="block text-sm px-2 py-4 hover:bg-green-800 transition duration-300"
+            className="block text-sm px-2 py-4 hover:bg-green-800 hover: transition duration-300"
           >
             Services
           </Link>

@@ -277,7 +277,7 @@ body {
 .home-hero {
   color: #fff;
  
-  height: 78vh;
+  height: 83vh;
   width: 100%;
   position: relative;
   background: linear-gradient(
@@ -418,7 +418,7 @@ background-position: center;
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 539px){
   .home-hero__socials{
     position: absolute;
     top: 90%;
@@ -450,6 +450,7 @@ background-position: center;
 left: 5.8rem;
   }
 }
+
 /* iphonese */
 /* @media only screen and (width:667px), screen and (height:375px){
   .home-hero__socials{
@@ -470,8 +471,13 @@ left: 5.8rem;
 }
 @media only screen and (width:540px), screen and (height:720px){
   .home-hero__socials{
-   top : 80%;
-   left: 6.5rem;
+   
+  }
+}
+@media only screen and (width:1114px), screen and (height:720px){
+  .home-hero__socials{
+   top : 50%;
+   left: 0rem;
   }
 }
 
