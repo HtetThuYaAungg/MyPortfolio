@@ -293,7 +293,7 @@ background-position: center;
     height: 90vh;
   }
 }
-@media only screen and (width:412px){
+@media only screen and (min-width:412px){
   .home-hero{
     height: 84vh;
   }
@@ -408,6 +408,11 @@ background-position: center;
     height:90vh;
   }
 }
+@media only screen and (width:602px), screen and (height:274px){
+  .home-hero{
+   top : 60vh;
+  }
+}
 
 
 .home-hero__socials {
@@ -465,6 +470,11 @@ left: 5.8rem;
   }
 }
 @media only screen and (width:851px), screen and (height:393px){
+  .home-hero__socials{
+   top : 55%;
+  }
+}
+@media only screen and (width:602px), screen and (height:274px){
   .home-hero__socials{
    top : 55%;
   }
