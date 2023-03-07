@@ -287,8 +287,8 @@ body {
 
 .home-hero {
   color: #fff;
- 
-  height: 50vh;
+  min-height: 76.2vh;
+  max-height: 90vh;
   width: 100%;
   position: relative;
   background: linear-gradient(
@@ -305,7 +305,7 @@ background-position: center;
     height: 90vh;
   }
 }
-@media only screen and (min-width:412px){
+@media only screen and (max-width:680px){
   .home-hero{
     height: 84vh;
   }
@@ -344,7 +344,7 @@ background-position: center;
 /* iphone SE */
 /* @media only screen and (width:667px), screen and (height:375px){
   .home-hero{
-   height: 10vh;
+   height: 0vh;
   }
 } */
 /* iphonexr */
@@ -364,11 +364,11 @@ background-position: center;
     height: 80vh;
   }
 }
-@media only screen and (width:601.7007874px), screen and (height:274.77165354px){
+/* @media only screen and (width:602px),screen and(height:275px){
   .home-hero{
-    height: 150vh;
+    height:100vh;
   }
-}
+} */
 @media only screen and (width:851px), screen and (height:393px){
   .home-hero{
     height: 100vh;
