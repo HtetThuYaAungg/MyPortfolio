@@ -297,6 +297,7 @@ body {
   ),
   url(./assets/common-bg.svg);
 background-position: center;
+
 }
 
 @media only screen and (width:912px), screen and (height:1368px){
@@ -619,7 +620,7 @@ left: 5.8rem;
 
 @media only screen and (max-width: 600px) {
   .btn {
-    padding: 1rem 2rem 0.5rem 2rem;
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
     font-size: 1rem;
     font-weight: 600;
   }
