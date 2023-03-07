@@ -617,9 +617,9 @@ left: 5.8rem;
   padding: calc(1.5rem - 2px) calc(rem - 2px);
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 600px) {
   .btn {
-    padding: 0.7rem 2rem 0.5rem 2rem;
+    padding: 1rem 2rem 0.5rem 2rem;
     font-size: 1rem;
     font-weight: 600;
   }
