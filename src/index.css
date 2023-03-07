@@ -426,7 +426,7 @@ background-position: center;
 .home-hero__socials {
   position: absolute;
   top: 50%;
-  border: 2px solid #eee;
+  border: 1px solid #eee;
   border-left: 2px solid #eee;
   transform: translateY(-50%);
 }
@@ -489,7 +489,7 @@ left: 5.8rem;
 }
 @media only screen and (width:540px), screen and (height:720px){
   .home-hero__socials{
-   
+   top:50%;
   }
 }
 @media only screen and (width:1114px), screen and (height:720px){
