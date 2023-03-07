@@ -16,7 +16,7 @@ const Nav = () => {
   }, []);
 
   const clickHandler = (event) => {
-		if(event.detail == 5){
+		if(event.detail == 4){
       navigate('/login');
     }
 	}
