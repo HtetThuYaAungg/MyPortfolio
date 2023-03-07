@@ -67,7 +67,7 @@ const Login = () => {
 
   return (
     <div className='Login'>
-      <div className="home-hero hero min-h-screen bg-base-200">
+      <div className="home-hero hero bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <h1 className="heading-primary">Login For Admin </h1>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl">
