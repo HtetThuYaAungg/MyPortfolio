@@ -16,7 +16,7 @@ const UnSupported = () => {
               May Be Later
             </p>
             <div className="text-gray-900 font-bold text-xl mb-2">OOPS!!!</div>
-            <p className="text-gray-700 text-base">Sorry! This Screen Is Not Supported By Developer.Please Rotate Your Phone!!!</p><AiOutlineRotateRight className=' animate-ping' />
+            <p className="text-gray-700 text-base">Sorry! This Screen Is Not Supported By Developer.<span className=' animate-pulse text-red-900'>Please Rotate Your Phone!!!</span></p><AiOutlineRotateRight className='mt-2 animate-ping text-green-900' />
           </div>
           <div className="flex items-center">
             <img className="w-10 h-10 rounded-full mr-4" src="/pp1.jpg" alt="Avatar of Jonathan Reinink" />

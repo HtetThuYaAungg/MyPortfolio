@@ -260,10 +260,10 @@ body {
   line-height: 1.6;
   padding: 0rem 3rem 0rem 3rem;
 }
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 600px) {
   .text-primary {
     font-size: 1rem;
-    padding: 0rem 0.5rem 0rem 0.5rem;
+    padding: 0rem 0.5rem 0rem 1rem;
   }
 }
 @media only screen and (width: 667px), screen and(height:375px) {
@@ -443,12 +443,12 @@ background-position: center;
 @media only screen and (max-width: 500px){
   .home-hero__socials{
     position: absolute;
-    top: 76%;
+    top: 78%;
     border: 2px solid #eee;
     border-radius: 8px;
     border-left: 2px solid #eee;
     display: flex;
-    left: 2.2rem;
+    left: 2.6rem;
   }
 }
 @media only screen and (width:540px), screen and (height:720px){

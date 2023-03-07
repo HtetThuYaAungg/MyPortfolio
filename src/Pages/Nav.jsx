@@ -109,7 +109,7 @@ const Nav = () => {
             <div className="md:hidden flex items-center">
               <button className="outline-none mobile-menu-button">
                 <svg
-                  className=" w-6 h-6 text-gray-500 hover:text-green-500 "
+                  className=" w-6 h-6 text-gray-500 hover:text-green-900 "
                   x-show="!showMenu"
                   fill="none"
                   strokeLinecap="round"
@@ -128,14 +128,14 @@ const Nav = () => {
         <div className="md:hidden flex justify-between mobile-menu items-center">
           <Link
             to="/"
-            className="py-4 px-2 text-green-900  border-green-800 font-semibold "
+            className="py-4 px-2 text-green-900  border-green-800 font-semibold  "
           >
             Home
           </Link>
 
           <Link
             to="/service"
-            className="block text-sm px-2 py-4 hover:bg-green-800 hover: transition duration-300"
+            className="block text-sm px-2 py-4 hover:bg-green-800 hover: transition duration-300 "
           >
             Services
           </Link>
@@ -156,9 +156,9 @@ const Nav = () => {
           <Link
             to="/"
             onClick={onButtonClick}
-            className="py-2 px-2 font-medium text-white bg-green-900 rounded hover:bg-green-800 transition duration-300"
+            className=" mx-1 py-3.5 px-2 font-medium text-white bg-green-900 rounded hover:bg-green-800 transition duration-300"
           >
-            Download CV
+            Download CV 
           </Link>
         </div>
       </nav>
