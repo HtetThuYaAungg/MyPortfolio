@@ -209,44 +209,12 @@ body {
   padding: 0rem 3rem 0rem 3rem;
 }
 
-@media only screen and (max-width: 605px) {
+@media only screen and (max-width: 37.5em) {
   .heading-primary {
-    font-size: 1.3rem;
-    padding: 5rem 1rem 0rem 3rem;
-  }
-}
-@media only screen and (width:844px), screen and (height:390px){
-  .heading-primary{
-     font-size: 1.5rem;
+    font-size: 1.5rem;
     padding: 0rem 1rem 0rem 1rem;
   }
 }
-@media only screen and (width:667px), screen and (height:375px){
-  .heading-primary{
-    font-size: 1rem;
-    padding: 0rem 1rem 0rem 2rem;
-   
-  }
-}
-@media only screen and (width:540px), screen and (height:622px){
-  .heading-primary{
-    padding: 0rem 1rem 0rem 1rem;
-  }
-}
-@media only screen and (width:851px), screen and (height:393px){
-  .heading-primary{
-    font-size: 1rem;
-    padding: 0rem 1rem 0rem 1rem;
-  }
-}
-
-@media only screen and (width:602px), screen and (height:274px){
-  .heading-primary{
-   height : 0.5rem;
-   padding: 0rem 1rem 0rem 1rem;
-  }
-}
-
 
 .text-primary {
   color: #fff;
@@ -258,170 +226,33 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .text-primary {
+    margin-top: auto;
     font-size: 1rem;
     padding: 0rem 0.5rem 0rem 0.5rem;
-  }
-}
-@media only screen and (width: 667px), screen and(height:375px) {
-  .text-primary {
-    font-size: 1rem;
-    padding: 0rem 0.5rem 0rem 0.5rem;
-  }
-}
-@media only screen and (width:540px), screen and (height:622px){
-  .text-primary{
-    padding: 0rem 1rem 0rem 1rem;
-  }
-}
-@media only screen and (width:851px), screen and (height:393px){
-  .text-primary{
-    font-size: 1rem;
-    padding: 0rem 1rem 0rem 1rem;
   }
 }
 
 .home-hero {
   color: #fff;
- 
-  height: 83vh;
-  width: 100%;
-  position: relative;
   background: linear-gradient(
-    to right,
-    rgba(6, 7, 7, 0.8),
-    rgb(6, 40, 20)
-  ),
-  url(./assets/common-bg.svg);
-background-position: center;
+      to right,
+      rgba(6, 7, 7, 0.8),
+      rgb(6, 40, 20)
+    ),
+    url(./assets/common-bg.svg);
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  min-height: 25.5rem;
+  max-height: 29.3rem;
+  position: relative;
 }
-
-@media only screen and (width:912px), screen and (height:1368px){
-  .home-hero{
-    height: 90vh;
+@media only screen and (max-width: 25.75rem) {
+  .home-hero {
+    height: unset;
+    min-height: 48.1rem;
   }
 }
-@media only screen and (min-width:412px){
-  .home-hero{
-    height: 84vh;
-  }
-}
-@media only screen and (width:414px), screen and (height:896px){
-  .home-hero{
-    height: 83vh;
-  }
-}
-@media only screen and (width:540px), screen and (height:720px){
-  .home-hero{
-    height: 79.5vh;
-  }
-}
-@media only screen and (width:768px), screen and (height:1024px){
-  .home-hero{
-    height: 85.5vh;
-  }
-}
-@media only screen and (width:1024px), screen and (height:768px){
-  .home-hero{
-    height: 80.5vh;
-  }
-}
-/* iphone 12 pro */
-@media only screen and (width:390px), screen and (height:844px){
-  .home-hero{
-    height: 82vh;
-  }
-}
-@media only screen and (width:844px), screen and (height:390px){
-  .home-hero{
-    height: 94vh;
-  }
-}
-/* iphone SE */
-/* @media only screen and (width:667px), screen and (height:375px){
-  .home-hero{
-   height: 10vh;
-  }
-} */
-/* iphonexr */
-@media only screen and (width:896px), screen and (height:414px){
-  .home-hero{
-    height: 81vh;
-  }
-}
-/* pixel5 */
-@media only screen and (width:393px), screen and (height:851px){
-  .home-hero{
-    height: 80vh;
-  }
-}
-@media only screen and (max-width:602px){
-  .home-hero{
-    height: 150vh;
-  }
-}
-@media only screen and (width:851px), screen and (height:393px){
-  .home-hero{
-    height: 100vh;
-  }
-}
-/* surface pro7 */
-@media only screen and (width:912px), screen and (height:1386px){
-  .home-hero{
-    height: 89vh;
-  }
-}
-@media only screen and (width:1386px), screen and (height:912px){
-  .home-hero{
-    height: 84.1vh;
-  }
-}
-
-/* surface duo */
-
-@media only screen and (width:720px), screen and (height:540px){
-  .home-hero{
-    height: 73vh;
-  }
-}
-@media only screen and (width:720px), screen and (height:1114px){
-  .home-hero{
-    height: 86.5vh;
-  }
-}
-@media only screen and (width:1114px), screen and (height:720px){
-  .home-hero{
-    height: 80vh;
-  }
-}
-
-/* ipadair */
-@media only screen and (width:820px), screen and (height:1180px){
-  .home-hero{
-    height: 87vh;
-  }
-}
-@media only screen and (width:1180px), screen and (height:820px){
-  .home-hero{
-    height: 82vh;
-  }
-}
-@media only screen and (width:653px), screen and (height:280px){
-  .home-hero{
-    height: 100vh;
-  }
-}
-@media only screen and (width:740px), screen and (height:360px){
-  .home-hero{
-    height: 100vh;
-  }
-}
-@media only screen and (width:540px), screen and (height:622px){
-  .home-hero{
-    height:90vh;
-  }
-}
-
-
 
 .home-hero__socials {
   position: absolute;
@@ -430,79 +261,22 @@ background-position: center;
   border-left: 2px solid #eee;
   transform: translateY(-50%);
 }
-
-@media only screen and (max-width: 539px){
+@media only screen and (max-width: 37.5em) {
   .home-hero__socials{
     position: absolute;
-    top: 90%;
+    top: 75%;
     border: 2px solid #eee;
     border-left: 2px solid #eee;
     display: flex;
     left: 2.2rem;
   }
 }
-@media only screen and (width:540px), screen and (height:720px){
-  .home-hero__socials{
-   top : 90%;
-   left: 6.5rem;
-  }
-}
-@media only screen and (width:915px), screen and (height:412px){
-  .home-hero__socials{
-   top : 52%;
-  }
-}
-@media only screen and (width:653px), screen and (height:280px){
-  .home-hero__socials{
-   top : 52%;
-  }
-}
-@media only screen and (width:512px), screen and (height:717px){
-  .home-hero__socials{
-   top : 90%;
-left: 5.8rem;
-  }
-}
 
-/* iphonese */
-/* @media only screen and (width:667px), screen and (height:375px){
-  .home-hero__socials{
-   top : 80%;
-  }
-} */
-/* iphonexr */
-@media only screen and (width:896px), screen and (height:414px){
-  .home-hero__socials{
-   top : 50%;
- 
-  }
-}
-@media only screen and (width:851px), screen and (height:393px){
-  .home-hero__socials{
-   top : 55%;
-  }
-}
-@media only screen and (width:602px), screen and (height:274px){
-  .home-hero__socials{
-   top : 55%;
-  }
-}
-@media only screen and (width:540px), screen and (height:720px){
-  .home-hero__socials{
-   
-  }
-}
-@media only screen and (width:1114px), screen and (height:720px){
-  .home-hero__socials{
-   top : 50%;
-   left: 0rem;
-  }
-}
 
 .home-hero__social {
   width: 4rem;
 }
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 37.5rem) {
   .home-hero__social{
     width: 3.5rem;
   }
