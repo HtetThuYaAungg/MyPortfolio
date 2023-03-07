@@ -202,7 +202,7 @@ body {
 }
 
 .heading-primary {
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
@@ -304,7 +304,7 @@ background-position: center;
     height: 90vh;
   }
 }
-@media only screen and (max-width:680px){
+@media only screen and (max-width:500px){
   .home-hero{
     height: 84vh;
   }
@@ -341,11 +341,11 @@ background-position: center;
   }
 }
 /* iphone SE */
-/* @media only screen and (width:667px), screen and (height:375px){
+@media only screen and (width:667px), screen and (height:375px){
   .home-hero{
-   height: 0vh;
+   height: 90vh;
   }
-} */
+}
 /* iphonexr */
 @media only screen and (width:896px), screen and (height:414px){
   .home-hero{
@@ -434,17 +434,18 @@ background-position: center;
 
 .home-hero__socials {
   position: absolute;
-  top: 55%;
-  border: .5px solid #eee;
-  border-radius: 6px;
+  top: 50%;
+  border: 1px solid #eee;
+  border-radius: 8px;
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 680px){
+@media only screen and (max-width: 500px){
   .home-hero__socials{
     position: absolute;
-    top: 70%;
+    top: 76%;
     border: 2px solid #eee;
+    border-radius: 8px;
     border-left: 2px solid #eee;
     display: flex;
     left: 2.2rem;
@@ -452,8 +453,7 @@ background-position: center;
 }
 @media only screen and (width:540px), screen and (height:720px){
   .home-hero__socials{
-   top : 90%;
-   left: 6.5rem;
+   top:50px;
   }
 }
 @media only screen and (width:915px), screen and (height:412px){
@@ -474,11 +474,11 @@ left: 5.8rem;
 }
 
 /* iphonese */
-/* @media only screen and (width:667px), screen and (height:375px){
+@media only screen and (width:667px), screen and (height:375px){
   .home-hero__socials{
-   top : 80%;
+   top : 50%;
   }
-} */
+}
 /* iphonexr */
 @media only screen and (width:896px), screen and (height:414px){
   .home-hero__socials{
@@ -543,7 +543,7 @@ left: 5.8rem;
   background: rgba(255, 255, 255, 0.1);
 }
 .home-hero__social-icon-link--bd-none {
-  border-bottom: 10;
+  border-bottom: 20;
 }
 .home-hero__social-icon {
   width: 100%;
