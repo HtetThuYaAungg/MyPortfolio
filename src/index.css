@@ -209,10 +209,10 @@ body {
   padding: 0rem 3rem 0rem 3rem;
 }
 
-@media only screen and (max-width: 605px) {
+@media only screen and (max-width: 680px) {
   .heading-primary {
-    font-size: 1.3rem;
-    padding: 2rem 1rem 0rem 3rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem 0rem 3rem;
   }
 }
 @media only screen and (width:844px), screen and (height:390px){
@@ -260,7 +260,7 @@ body {
   line-height: 1.6;
   padding: 0rem 3rem 0rem 3rem;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 680px) {
   .text-primary {
     font-size: 1rem;
     padding: 0rem 0.5rem 0rem 0.5rem;
@@ -436,12 +436,12 @@ background-position: center;
 .home-hero__socials {
   position: absolute;
   top: 50%;
-  border: 1px solid #eee;
-  border-left: 2px solid #eee;
+  border: .5px solid #eee;
+  border-radius: 6px;
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 539px){
+@media only screen and (max-width: 680px){
   .home-hero__socials{
     position: absolute;
     top: 90%;
@@ -559,9 +559,9 @@ left: 5.8rem;
   width: 92%;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 680px) {
   .home-hero__content {
-    padding: 8rem 0 6rem 0;
+    padding: 6rem 0 0 0;
     margin: auto;
     position: static;
     transform: translate(0, 0);
