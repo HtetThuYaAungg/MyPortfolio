@@ -209,10 +209,10 @@ body {
   padding: 0rem 3rem 0rem 3rem;
 }
 
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 605px) {
   .heading-primary {
     font-size: 1.3rem;
-    padding: 0rem 1rem 0rem 1rem;
+    padding: 5rem 1rem 0rem 3rem;
   }
 }
 @media only screen and (width:844px), screen and (height:390px){
@@ -240,6 +240,12 @@ body {
   }
 }
 
+@media only screen and (width:602px), screen and (height:274px){
+  .heading-primary{
+   height : 0.5rem;
+   padding: 0rem 1rem 0rem 1rem;
+  }
+}
 
 
 .text-primary {
@@ -288,6 +294,7 @@ body {
   url(./assets/common-bg.svg);
 background-position: center;
 }
+
 @media only screen and (width:912px), screen and (height:1368px){
   .home-hero{
     height: 90vh;
@@ -345,6 +352,11 @@ background-position: center;
 @media only screen and (width:393px), screen and (height:851px){
   .home-hero{
     height: 80vh;
+  }
+}
+@media only screen and (max-width:602px){
+  .home-hero{
+    height: 150vh;
   }
 }
 @media only screen and (width:851px), screen and (height:393px){
@@ -408,11 +420,7 @@ background-position: center;
     height:90vh;
   }
 }
-@media only screen and (width:602px), screen and (height:274px){
-  .home-hero{
-   top : 60vh;
-  }
-}
+
 
 
 .home-hero__socials {
