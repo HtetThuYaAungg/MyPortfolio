@@ -16,9 +16,9 @@ const Nav = () => {
   }, []);
 
   const clickHandler = (event) => {
-		
+		if(event.detail == 2){
       navigate('/login');
-    
+    }
 	}
 
   
