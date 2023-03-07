@@ -246,7 +246,11 @@ body {
    padding: 0rem 1rem 0rem 1rem;
   }
 }
-
+@media only screen and (width:360px), screen and (height:740px){
+  .heading-primary{
+    padding: 0rem 1rem 0rem 1rem;
+  }
+}
 
 .text-primary {
   color: #fff;
@@ -279,6 +283,7 @@ body {
     padding: 0rem 1rem 0rem 1rem;
   }
 }
+
 
 .home-hero {
   color: #fff;
@@ -350,6 +355,11 @@ background-position: center;
 }
 /* pixel5 */
 @media only screen and (width:393px), screen and (height:851px){
+  .home-hero{
+    height: 80vh;
+  }
+}
+@media only screen and (width:360px), screen and (height:740px){
   .home-hero{
     height: 80vh;
   }
@@ -496,6 +506,12 @@ left: 5.8rem;
   .home-hero__socials{
    top : 50%;
    left: 0rem;
+  }
+}
+@media only screen and (width:360px), screen and (height:740px){
+  .home-hero__socials{
+    top: 92%;  
+    left: 1.3rem;
   }
 }
 
