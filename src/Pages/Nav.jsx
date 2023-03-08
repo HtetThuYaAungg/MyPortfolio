@@ -158,7 +158,7 @@ const Nav = () => {
             onClick={onButtonClick}
             className=" mx-1 py-3.5 px-2 font-medium text-white bg-green-900 rounded hover:bg-green-800 transition duration-300"
           >
-            Download CV 
+            Download
           </Link>
         </div>
       </nav>
