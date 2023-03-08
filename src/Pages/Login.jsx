@@ -70,7 +70,7 @@ const Login = () => {
       <div className="home-hero hero bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <h1 className="heading-primary">Login For Admin </h1>
-          <div className="card flex-shrink-0 w-full max-w-sm ">
+          <div className="card flex-shrink-0 w-full max-w-xs shadow-2xl">
             <form className="card-body" >
               <div className="form-control justify-center">
                 <label className="label">
