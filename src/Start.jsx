@@ -17,8 +17,6 @@ import Signup from './Pages/Signup'
 const Start = () => {
   return (
     <div className='App'>
-
-
       <Nav />
       <UserProvider>
         <Routes>
