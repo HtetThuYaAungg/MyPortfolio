@@ -70,8 +70,8 @@ const Login = () => {
       <div className="home-hero hero bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <h1 className="heading-primary">Login For Admin </h1>
-          <div className="card flex-shrink-0 w-full max-w-xs shadow-2xl">
-            <form className="" >
+          <div className="card flex-shrink-0 max-w-xs shadow-2xl">
+            <form className="cart-body" >
               <div className="form-control justify-center">
                 <label className="label">
                   <span className="label-text text-white">E-Mail</span>
@@ -85,7 +85,7 @@ const Login = () => {
                   value={form.email}
                   onChange={onFormInputChange}
                   placeholder="Admin E-mail Address"
-                  className=" max-w-xs input input-bordered bg-white text-green-900"
+                  className=" w-64 input input-bordered bg-white text-green-900"
                 />
               </div>
               <div className="form-control">
@@ -100,7 +100,7 @@ const Login = () => {
                   autoComplete="current-password"
                   value={form.password}
                   onChange={onFormInputChange}
-                  placeholder="password" className="input input-bordered bg-white text-green-900"
+                  placeholder="password" className="w-64 input input-bordered bg-white text-green-900"
                 />
               </div>
               <div className="form-control mt-6 flex-row">
