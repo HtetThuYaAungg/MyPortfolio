@@ -85,7 +85,7 @@ const Login = () => {
                   value={form.email}
                   onChange={onFormInputChange}
                   placeholder="Admin E-mail Address"
-                  className="input input-bordered bg-white text-green-900"
+                  className=" max-w-xs input input-bordered bg-white text-green-900"
                 />
               </div>
               <div className="form-control">
