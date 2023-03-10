@@ -1,3 +1,4 @@
+import Tooltip from '@mui/material/Tooltip';
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -31,14 +32,16 @@ const MobleMenu = ({onButtonClick}) => {
             className="block text-xs px-1.5 py-2 rounded-md hover:bg-green-800 transition duration-300"
           >
             CONTACT
-          </Link>
+        </Link>
+        <Tooltip title="Download" arrow>
           <Link
             to="/"
             onClick={onButtonClick}
             className=" mx-2 rounded-md py-1 px-1.5 font-mono text-white bg-green-900 rounded hover:bg-green-800 transition duration-300"
           >
-            RESUME
+            RESUME 
           </Link>
+          </Tooltip>
         </div>
     </div>
   )

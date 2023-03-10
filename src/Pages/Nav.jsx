@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import MobleMenu from "../components/MobleMenu";
 import ToggleBtn from "../components/ToggleBtn";
+import Tooltip from '@mui/material/Tooltip';
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -96,13 +97,15 @@ const Nav = () => {
             </div>
             {/* <!-- Secondary Navbar items --> */}
             <div className="hidden md:flex items-center space-x-3 ml-2 ">
-              <Link
-                to="/"
-                onClick={onButtonClick}
-                className="py-2 px-2 font-medium text-white bg-green-900 rounded hover:bg-green-800 transition duration-300"
-              >
-                RESUME
-              </Link>
+            <Tooltip title="Download" placement="right" arrow>
+          <Link
+            to="/"
+            onClick={onButtonClick}
+            className=" mx-2 rounded-md py-1 px-1.5 font-mono text-white bg-green-900 rounded hover:bg-green-800 transition duration-300"
+          >
+            RESUME 
+          </Link>
+          </Tooltip>
             </div>
             {/* <!-- Mobile menu button --> */}
             <div className="md:hidden flex items-center">

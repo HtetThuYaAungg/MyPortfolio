@@ -1,16 +1,17 @@
 import React, { useState } from "react";
-import { Global } from "@emotion/react";
-import { styled } from "@mui/material/styles";
-
-import { grey } from "@mui/material/colors";
-
-import Box from "@mui/material/Box";
-
-import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Radial from "../components/Radial";
-import { CssBaseline } from "@mui/material";
+import { Global } from '@emotion/react';
+import { styled } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import { grey } from '@mui/material/colors';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import Skeleton from '@mui/material/Skeleton';
+import Typography from '@mui/material/Typography';
+import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 
-const drawerBleeding = 14;
+
+const drawerBleeding = 56;
 
 const Root = styled("div")(({ theme }) => ({
   height: "100%",
@@ -36,6 +37,8 @@ const Puller = styled(Box)(({ theme }) => ({
 }));
 
 const Popup = ({ window, open, setOpen, toggleDrawer }) => {
+
+  const today = new Date();
   // This is used only for the example
   const container =
     window !== undefined ? () => window().document.body : undefined;
@@ -48,7 +51,7 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
           ".MuiDrawer-root > .MuiPaper-root": {
             height: `calc(60% - ${drawerBleeding}px)`,
             overflow: "visible",
-            position: "absolute",
+         
             
           },
         }}
@@ -73,13 +76,16 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
             top: -drawerBleeding,
             borderTopLeftRadius: 8,
             borderTopRightRadius: 8,
-            visibility: "true",
+            visibility: "visible",
             right: 0,
             left: 0,
-            height: "14.5px",
+            height: "60px",
           }}
         >
           <Puller />
+          
+          <Typography className=" justify-center flex space-x-7" sx={{ p: 2, color: 'text.secondary' }}><p className='text-green-900 hover:text-green-700'>Skills and Tools &copy; {today.getFullYear()}</p></Typography>
+
         </StyledBox>
         <StyledBox
           sx={{

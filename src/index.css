@@ -345,7 +345,7 @@ background-position: center;
 }
 /* iphone SE */
 @media only screen and (width:667px), screen and (height:375px){
-  .home-hero{
+  .home-hero .home-hero__cta1{
    height: 90vh;
   }
 }
@@ -579,6 +579,26 @@ left: 5.8rem;
   margin-top: 5rem;
   text-align: center;
 }
+.home-hero__cta1 {
+  padding-top: 29rem;
+  text-align: center;
+}
+@media only screen and (min-width: 640px) {
+  .home-hero__cta1{
+  padding-top: 13rem;
+  text-align: center;
+}}
+@media only screen and (min-width: 768px) {
+  .home-hero__cta1{
+  padding-top: 13rem;
+  text-align: center;
+}}
+@media only screen and (min-width: 1024px) {
+  .home-hero__cta1{
+  padding-top: 14rem;
+  text-align: center;
+}}
+
 
 .btn {
   background: #fff;

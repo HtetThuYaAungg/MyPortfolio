@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import ToggleBtn from "../components/ToggleBtn";
+import NavigationIcon from "@mui/icons-material/Navigation";
 import Popup from "./Popup";
+import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
+import { Fab, Tooltip } from "@mui/material";
 
 const Service = (props) => {
   const { window } = props;
@@ -14,7 +17,7 @@ const Service = (props) => {
   return (
     <div className="Service">
       <section className="home-hero">
-        <h1 className="heading-primary">About Me</h1>
+        <h1 className="heading-primary  shadow-xl ">About Me</h1>
         <div className="home-hero__info">
           <p className="text-primary">
             A Frontend focused Web Developer building the Frontend of Websites
@@ -22,16 +25,17 @@ const Service = (props) => {
             product.
           </p>
         </div>
+        <div className=" float-right pr-4 relative">
         <div className="">
-          <div className="">
-          <div className="home-hero__cta">
-          <a className="btn btn--bg" onClick={toggleDrawer(true)}><ToggleBtn cusClassName={'outline-none'} cusOnClick={toggleDrawer(true)} /></a>
-        </div>
-        
+            <div className= "lg:pt-52 hidden lg:block">
+            <Tooltip  title="Skills" placement="top" arrow>
+              <Fab aria-label="add" onClick={toggleDrawer(true)}>
+                <NavigationIcon />
+                </Fab>
+                </Tooltip>
+            </div>
           </div>
-         
         </div>
-       
 
         <Popup
           window={window}
