@@ -554,16 +554,17 @@ left: 5.8rem;
 
 .home-hero__content {
   position: absolute;
-  top: 50%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 90rem;
   width: 92%;
+ 
 }
 
 @media only screen and (max-width: 680px) {
   .home-hero__content {
-    padding: 6rem 0 0 0;
+    padding: 4rem 0 0 0;
     margin: auto;
     position: static;
     transform: translate(0, 0);
@@ -626,4 +627,29 @@ left: 5.8rem;
     font-size: 1rem;
     font-weight: 600;
   }
+}
+
+.about-hero {
+  color: #fff;
+  height: auto;
+  width: 100%;
+  min-height:auto;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    rgba(6, 7, 7, 0.8),
+    rgb(6, 40, 20)
+  ),
+  url(./assets/common-bg.svg);
+background-position: center;
+
+}
+/* From https://css.glass */
+.glass{
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
 }
