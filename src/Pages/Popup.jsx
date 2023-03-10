@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Radial from "../components/Radial";
+import { CssBaseline } from "@mui/material";
 
 const drawerBleeding = 14;
 
@@ -41,12 +42,14 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
 
   return (
     <div>
+      
       <Global
         styles={{
           ".MuiDrawer-root > .MuiPaper-root": {
             height: `calc(60% - ${drawerBleeding}px)`,
             overflow: "visible",
             position: "absolute",
+            
           },
         }}
       />
@@ -61,6 +64,7 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
         disableSwipeToOpen={false}
         ModalProps={{
           keepMounted: true,
+        
         }}
       >
         <StyledBox
@@ -69,7 +73,7 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
             top: -drawerBleeding,
             borderTopLeftRadius: 8,
             borderTopRightRadius: 8,
-            visibility: "false",
+            visibility: "true",
             right: 0,
             left: 0,
             height: "14.5px",
