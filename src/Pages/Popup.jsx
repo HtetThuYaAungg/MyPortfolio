@@ -9,6 +9,8 @@ import Box from '@mui/material/Box';
 import Skeleton from '@mui/material/Skeleton';
 import Typography from '@mui/material/Typography';
 import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import TabsPopup from "./TabsPopup";
+import RadialPopup from "./RadialPopup";
 
 
 const drawerBleeding = 56;
@@ -83,9 +85,10 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
           }}
         >
           <Puller />
+          {/* <TabsPopup/> */}
           
           <Typography className=" justify-center flex space-x-7" sx={{ p: 2, color: 'text.secondary' }}><p className='text-green-900 hover:text-green-700'>Skills and Tools &copy; {today.getFullYear()}</p></Typography>
-
+          
         </StyledBox>
         <StyledBox
           sx={{
@@ -96,53 +99,7 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
             overflow: "auto",
           }}
         >
-          <div className="py-2 md:flex md:flex-wrap md:justify-center md:gap-4 lg:flex lg:flex-wrap lg:gap-6 lg:justify-center px-1 bg-gray-100">
-            <Radial
-              className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 mt-8 md:mt-10 lg:mt-10 mb-16"
-              }
-              text1={"80%"}
-              text2={"Javascript"}
-              color={"text-yellow-400"}
-              perc={"300"}
-            />
-            <Radial
-              className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-10 lg:mt-10 mb-16"
-              }
-              text1={"80%"}
-              text2={"ReactJs"}
-              color={"text-blue-500"}
-              perc={"300"}
-            />
-            <Radial
-              className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-10 lg:mt-10 mb-16"
-              }
-              text1={"70%"}
-              text2={"VueJs"}
-              color={"text-green-400"}
-              perc={"287"}
-            />
-            <Radial
-              className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-7 lg:mt-10 mb-16"
-              }
-              text1={"50%"}
-              text2={"AngularJs"}
-              color={"text-red-600"}
-              perc={"245"}
-            />
-            <Radial
-              className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-7 lg:mt-7 mb-5"
-              }
-              text1={"65%"}
-              text2={"Laravel"}
-              color={"text-orange-400"}
-              perc={"270"}
-            />
-          </div>
+          <RadialPopup/>
         </StyledBox>
       </SwipeableDrawer>
     </div>
