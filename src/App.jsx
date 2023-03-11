@@ -1,6 +1,5 @@
 
 import React from 'react'
-import './App.css'
 import Start from './Start'
 import useWindowSize from './hooks/useWindowSize';
 import UnSupported from './Pages/UnSupported';
