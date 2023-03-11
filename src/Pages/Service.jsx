@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import NavigationIcon from "@mui/icons-material/Navigation";
 import Popup from "./Popup";
 import { Fab, Tooltip } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const Service = (props) => {
   const { window } = props;
@@ -15,10 +16,10 @@ const Service = (props) => {
   return (
     <div className="Service">
       <section className="home-hero">
-        <div className="home-hero__content">
+        <div className="home-hero__content ">
           <h1 className="heading-primary">About Me</h1>
           <div className="home-hero__info ">
-            <div className=" about__content-main">
+            <div className=" about__content-main mb-2">
               <p>Get to know me!</p>
               <div class="about__content-details-para">
                 Hey! It's&nbsp;
@@ -38,10 +39,10 @@ const Service = (props) => {
                 <strong> contact</strong> me here.
               </div>
             </div>
-            <div className="home-hero__cta">
-              <a href="./#projects" className="btn btn--bg">
-                Contact Me
-              </a>
+            <div className=" lg:float-right  lg:px-96 ">
+              <Link to="/contact" className="btn btn--bg">
+                Contact
+              </Link>
               <br />
             </div>
           </div>
