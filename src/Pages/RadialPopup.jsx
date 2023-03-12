@@ -8,7 +8,7 @@ const RadialPopup = () => {
                          
             <Radial 
               className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 mt-4 md:mt-1 lg:mt-10 mb-16 md:mb-4 md:px-6"
+                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 mt-4 md:mt-10 lg:mt-10 mb-16 md:mb-4 md:px-6"
               }
               text1={"80%"}
               text2={"Javascript"}
@@ -17,7 +17,7 @@ const RadialPopup = () => {
             />
             <Radial
               className1={ 
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-2 lg:mt-10 mb-16 md:mb-4"
+                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-10 lg:mt-10 mb-16 md:mb-4"
               }
               text1={"80%"}
               text2={"ReactJs"}
@@ -26,7 +26,7 @@ const RadialPopup = () => {
             />
             <Radial
               className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-2 lg:mt-10 mb-16 md:mb-16"
+                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-10 lg:mt-10 mb-16 md:mb-10"
               }
               text1={"70%"}
               text2={"VueJs"}
@@ -35,7 +35,7 @@ const RadialPopup = () => {
             />
             <Radial
               className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-10 lg:mt-10 mb-16 md:mb-4"
+                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-10 lg:mt-10 mb-16 md:mb-10 "
               }
               text1={"50%"}
               text2={"AngularJs"}
@@ -44,7 +44,7 @@ const RadialPopup = () => {
             />
             <Radial
               className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-10 lg:mt-10 mb-5"
+                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-10 lg:mt-8 mb-5"
               }
               text1={"65%"}
               text2={"Laravel"}
