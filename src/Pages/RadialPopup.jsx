@@ -26,7 +26,7 @@ const RadialPopup = () => {
             />
             <Radial
               className1={
-                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-2 lg:mt-10 mb-16 md:mb-4"
+                "flex items-center flex-wrap px-10 bg-white shadow-xl rounded-2xl h-16 md:mt-2 lg:mt-10 mb-16 md:mb-16"
               }
               text1={"70%"}
               text2={"VueJs"}
