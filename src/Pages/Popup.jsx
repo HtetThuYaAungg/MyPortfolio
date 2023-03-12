@@ -13,6 +13,8 @@ import TabsPopup from "./TabsPopup";
 import RadialPopup from "./RadialPopup";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { Tab } from "@mui/material";
+import StepList from "../components/StepList";
+
 
 const drawerBleeding = 56;
 
@@ -92,18 +94,19 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
               className=" justify-center flex space-x-7"
               sx={{ p: 2, color: "text.secondary" }}
             >
-              <p className="text-green-900 hover:text-green-700">
+             
                 <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
                   <TabList
                     onChange={handleChange}
                     aria-label="lab API tabs example"
+                    sx={{color:'white'}}
                   >
-                    <Tab label="Programming" value="1" />
+                    <Tab   label="Programming" value="1" />
                     <Tab label="Languages" value="2" />
                     <Tab label="Training" value="3" />
                   </TabList>
                 </Box>
-              </p>
+             
             </Typography>
 
             <StyledBox
@@ -121,10 +124,12 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
                 <RadialPopup />
               </TabPanel>
               <TabPanel value="2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                maiores perspiciatis repellat praesentium numquam similique
-                reiciendis magnam mollitia! Rem dolorem quos, repellat rerum
-                explicabo sequi quam dolores? Molestias, quo cupiditate?
+               <p className=" mb-6 px-5 font-bold text-green-900 sm:px-20 lg:px-36">Burmese</p>
+                <StepList activeStep={2} level1={'Beginner'} level2={'Junior'} level3={ 'Intermediate' } level4={ 'Pro'} />
+                <p className=" mb-6 px-5 mt-10 font-bold text-green-900 sm:px-20 lg:px-36">English</p>
+                <StepList  activeStep={1} level1={'Beginner'} level2={'Junior'} level3={ 'Intermediate' } level4={ 'Pro'}/>
+                <p className=" mb-6 px-5 mt-10 font-bold text-green-900 sm:px-20 lg:px-36">Japanese</p>
+                <StepList activeStep={1} level1={'N5'} level2={'N4'} level3={'N3'} level4={'N2'} />
               </TabPanel>
               <TabPanel value="3">Item Three</TabPanel>
             </StyledBox>
