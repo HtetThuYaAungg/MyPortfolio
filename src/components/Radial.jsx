@@ -7,7 +7,7 @@ const Radial = ({text1,text2,color,className1,perc}) => {
                     
                     <div className="flex  items-center justify-center -m-7 overflow-hidden bg-white  rounded-full">
                       
-                      <svg className="w-28 h-28 transform translate-x- translate-y-" >
+                      <svg className=" w-28 h-28 transform translate-x- translate-y-" >
                       
                     <circle
                       className="text-gray-400"

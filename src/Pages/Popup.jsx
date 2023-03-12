@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import Radial from "../components/Radial";
-import { Global } from '@emotion/react';
-import { styled } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { grey } from '@mui/material/colors';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import Skeleton from '@mui/material/Skeleton';
-import Typography from '@mui/material/Typography';
-import SwipeableDrawer from '@mui/material/SwipeableDrawer';
+import { Global } from "@emotion/react";
+import { styled } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { grey } from "@mui/material/colors";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import Skeleton from "@mui/material/Skeleton";
+import Typography from "@mui/material/Typography";
+import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import TabsPopup from "./TabsPopup";
 import RadialPopup from "./RadialPopup";
-
+import { TabContext, TabList, TabPanel } from "@mui/lab";
+import { Tab } from "@mui/material";
 
 const drawerBleeding = 56;
 
@@ -39,22 +40,24 @@ const Puller = styled(Box)(({ theme }) => ({
 }));
 
 const Popup = ({ window, open, setOpen, toggleDrawer }) => {
-
   const today = new Date();
   // This is used only for the example
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
+  const [value, setValue] = useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
     <div>
-      
       <Global
         styles={{
           ".MuiDrawer-root > .MuiPaper-root": {
             height: `calc(60% - ${drawerBleeding}px)`,
             overflow: "visible",
-         
-            
           },
         }}
       />
@@ -69,7 +72,6 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
         disableSwipeToOpen={false}
         ModalProps={{
           keepMounted: true,
-        
         }}
       >
         <StyledBox
@@ -85,21 +87,49 @@ const Popup = ({ window, open, setOpen, toggleDrawer }) => {
           }}
         >
           <Puller />
-          {/* <TabsPopup/> */}
-          
-          <Typography className=" justify-center flex space-x-7" sx={{ p: 2, color: 'text.secondary' }}><p className='text-green-900 hover:text-green-700'>Skills and Tools &copy; {today.getFullYear()}</p></Typography>
-          
-        </StyledBox>
-        <StyledBox
-          sx={{
-            px: 2,
-            pb: 2,
-            pt: 2,
-            height: "100%",
-            overflow: "auto",
-          }}
-        >
-          <RadialPopup/>
+          <TabContext value={value}>
+            <Typography
+              className=" justify-center flex space-x-7"
+              sx={{ p: 2, color: "text.secondary" }}
+            >
+              <p className="text-green-900 hover:text-green-700">
+                <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+                  <TabList
+                    onChange={handleChange}
+                    aria-label="lab API tabs example"
+                  >
+                    <Tab label="Programming" value="1" />
+                    <Tab label="Languages" value="2" />
+                    <Tab label="Training" value="3" />
+                  </TabList>
+                </Box>
+              </p>
+            </Typography>
+
+            <StyledBox
+              sx={{
+                pb: 2,
+                height: {
+                  xs: "calc(100vh - 300px - 110px)",
+                  sm: "calc(100vh - 200px - 10px)",
+                  md:"calc(100vh - 200px - 100px)",
+                } ,
+                overflow: "auto",
+              }}
+            >
+              <TabPanel className="" value="1">
+                <RadialPopup />
+              </TabPanel>
+              <TabPanel value="2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+                maiores perspiciatis repellat praesentium numquam similique
+                reiciendis magnam mollitia! Rem dolorem quos, repellat rerum
+                explicabo sequi quam dolores? Molestias, quo cupiditate?
+              </TabPanel>
+              <TabPanel value="3">Item Three</TabPanel>
+            </StyledBox>
+          </TabContext>
+          {/* <Typography className=" justify-center flex space-x-7" sx={{ p: 2, color: 'text.secondary' }}><p className='text-green-900 hover:text-green-700'>Skills and Tools &copy; {today.getFullYear()}</p></Typography> */}
         </StyledBox>
       </SwipeableDrawer>
     </div>
